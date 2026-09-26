@@ -1,0 +1,53 @@
+{
+    "name": "sindhu-drishti-backend",
+    "version": "1.0.0",
+    "description": "Sindhu Drishti disaster management backend",
+    "keywords": [
+        "Payment Switch",
+        "Payment Orchestration",
+        "Intelligent Routing",
+        "Failover",
+        "Idempotency"
+    ],
+    "homepage": "https://github.com/uvee-t/rustpay#readme",
+    "bugs": {
+        "url": "https://github.com/uvee-t/rustpay/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/uvee-t/rustpay.git"
+    },
+    "license": "ISC",
+    "author": "uvee-t",
+    "type": "module",
+    "main": "./src/server.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "dev": "node --watch src/server.js",
+        "start": "node src/server.js",
+        "worker": "node src/workers/worker.js",
+        "check": "node --check src/server.js && node --check src/app.js"
+    },
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "bullmq": "^6.3.8",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.6",
+        "dotenv": "^18.0.3",
+        "express": "^5.2.1",
+        "helmet": "^8.3.0",
+        "ioredis": "^6.0.0",
+        "jsonwebtoken": "^9.0.3",
+        "mongoose": "^9.10.2",
+        "pg": "^8.23.0",
+        "pino": "^10.3.1",
+        "pino-http": "^11.0.0",
+        "zod": "^4.6.5",
+        "nodemailer": "^7.0.6"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14"
+    }
+}
